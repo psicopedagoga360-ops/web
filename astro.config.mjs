@@ -4,6 +4,8 @@ import starlight from "@astrojs/starlight";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
@@ -44,10 +46,14 @@ export default defineConfig({
       },
     }),
   ],
+
   image: {
     service: passthroughImageService(),
   },
+
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: netlify(),
 });
