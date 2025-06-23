@@ -1,0 +1,40 @@
+---
+title: "Soultalk"
+template: splash
+hero:
+  tagline: "Conecta desde el corazón, escucha con empatía y habla con el alma!"
+  image:
+    file: ../../../../assets/houston.webp
+  actions:
+    - text: Conseguirlo
+      link: /es/soultalk
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+import { Image } from "astro:assets";
+
+import soultalk7 from "../../../../assets/soultalk/soultalk-7.jpg";
+import soultalk8 from "../../../../assets/soultalk/soultalk-8.jpg";
+import soultalk9 from "../../../../assets/soultalk/soultalk-9.jpg";
+import soultalk10 from "../../../../assets/soultalk/soultalk-10.jpg";
+import soultalk11 from "../../../../assets/soultalk/soultalk-11.jpg";
+import soultalk12 from "../../../../assets/soultalk/soultalk-12.jpg";
+import soultalk13 from "../../../../assets/soultalk/soultalk-13.jpg";
+import soultalk14 from "../../../../assets/soultalk/soultalk-14.jpg";
+
+<CardGrid stagger>
+  <Card>
+    <Image src={soultalk10} alt="sapo" />
+  </Card>
+  <Card>
+    <Image src={soultalk9} alt="sapo" />
+  </Card>
+  <Card>
+    <Image src={soultalk8} alt="sapo" />
+  </Card>
+  <Card>
+    <Image src={soultalk7} alt="sapo" />
+  </Card>
+</CardGrid>
