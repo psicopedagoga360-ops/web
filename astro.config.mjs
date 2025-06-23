@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 import starlight from "@astrojs/starlight";
 
 import tailwindcss from "@tailwindcss/vite";
@@ -44,6 +44,9 @@ export default defineConfig({
       },
     }),
   ],
+  image: {
+    service: passthroughImageService(),
+  },
   vite: {
     plugins: [tailwindcss()],
   },
