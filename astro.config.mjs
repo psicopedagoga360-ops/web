@@ -35,13 +35,15 @@ export default defineConfig({
         // Path to your Tailwind base styles:
         "./src/styles/global.css",
       ],
-      defaultLocale: "es",
+      defaultLocale: "root",
       locales: {
         en: {
           label: "English",
+          lang: "en",
         },
-        es: {
+        root: {
           label: "Español",
+          lang: "es",
         },
       },
     }),
@@ -57,3 +59,4 @@ export default defineConfig({
 
   adapter: netlify(),
 });
+

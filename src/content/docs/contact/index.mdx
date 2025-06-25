@@ -1,0 +1,30 @@
+---
+title: "Contacto"
+template: splash
+hero:
+  tagline: "Podes encontrarme por estos canales:"
+  image:
+    file: ../../../assets/houston.webp
+next: false
+prev: false
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+<CardGrid stagger>
+  <a
+    href="https://www.instagram.com/psicopedagogamarianasavid/"
+    target="_blank"
+  >
+    <Card title="Instagram" icon="instagram"></Card>
+  </a>
+  <a
+    href="https://www.linkedin.com/in/mariana-savid-saravia-a11b17210/"
+    target="_blank"
+  >
+    <Card title="LinkedIn" icon="linkedin"></Card>
+  </a>
+  <a href="mailto:mariansavid@gmail.com" target="_blank">
+    <Card title="E-Mail" icon="email"></Card>
+  </a>
+</CardGrid>
